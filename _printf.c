@@ -1,9 +1,12 @@
 #include "main.h"
 #include <unistd.h>
+
 /**
  * _printf - printf function.
+ * @...:variable arguments to be formatted and printed
  * @format: Formatted string in which to print the arguments
- * Return: printed chars.
+ * @ap:pass a variable number of arguments to a function
+ * Return: Number of characters printed.
  */
 
 int _printf(const char *format, ...)
@@ -42,7 +45,6 @@ int _printf(const char *format, ...)
 		else
 	{
 		printed_chars += write(1, format, 1);
-		printed_chars++;
 	}
 	format++;
 	}
