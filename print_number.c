@@ -10,15 +10,13 @@
 
 int print_number(va_list ap)
 {
-	int number = va_arg(ap. int);
+	int number = va_arg(ap, int);
 	int printed_chars = 0;
 	int divisor = 1;
-	int is_negative = 0;
 
 	if (number < 0)
 	{
-		is_negative = 1;
-		printed_chars += write(1, "-". 1);
+		printed_chars += write(1, "-", 1);
 		number = number;
 	}
 

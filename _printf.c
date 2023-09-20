@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <unistd.h>
 /**
  * _printf - printf function.
  * Return: printed chars.
@@ -36,7 +36,6 @@ int _printf(const char *format, ...)
                     printed_chars += write(1, "%", 1);
                     break;
 		    
-		    //putchar('%'); // print '%' character
                     printed_chars++;
                     break;
             }
@@ -45,7 +44,6 @@ int _printf(const char *format, ...)
         {
             printed_chars += write(1, format, 1);
 
-	    //	putchar(*format); // Print the character
             printed_chars++;
         }
         format++;

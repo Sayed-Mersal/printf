@@ -8,4 +8,4 @@ int print_char(va_list ap);
 int print_string(va_list ap);
 int print_percent(va_list ap);
 
-endif /* MAIN_H */
+#endif /* MAIN_H */

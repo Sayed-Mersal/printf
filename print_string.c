@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stddef.h>
+#include <unistd.h>
+
 
 /**
  * custom_print_string - print a string
