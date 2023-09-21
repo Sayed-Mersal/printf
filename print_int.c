@@ -1,6 +1,12 @@
 #include "main.h"
 #include <unistd.h>
 
+/**
+ * print_int - prints integer
+ * @ap:pass a variable number of arguments to a function
+ * Return: printed characters
+*/
+
 int print_int(va_list ap)
 {
 	int num = va_arg(ap, int);
@@ -20,6 +26,7 @@ int print_int(va_list ap)
 	{
 	int digit = (num / divisor) % 10;
 	char digit_char = '0' + digit;
+
 	printed_chars += write(1, &digit_char, 1);
 	divisor /= 10;
 	}
