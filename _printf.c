@@ -35,10 +35,13 @@ int _printf(const char *format, ...)
 			case '%':
 				printed_chars += print_percent(ap);
 				break;
+			case 'd':
+			case 'i':
+				printed_chars += print_int(ap);
+				break;
+
 			default:
 				printed_chars += write(1, "%", 1);
-			break;
-				printed_chars++;
 			break;
 		}
 	}
