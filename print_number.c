@@ -20,7 +20,7 @@ int print_number(va_list ap)
 		number = number;
 	}
 
-	while ((number / divisor) >= 10)
+	while ((number \ divisor) >= 10)
 		divisor *= 10;
 
 	while (divisor > 0)
