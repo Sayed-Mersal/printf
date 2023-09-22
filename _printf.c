@@ -25,10 +25,10 @@ int _printf(const char *format, ...)
 		switch (*format)
 		{
 			case 'c':
-				printed_chars += custom_print_char(ap);
+				printed_chars += print_char(ap);
 				break;
 			case 's':
-				printed_chars += custom_print_string(ap);
+				printed_chars += print_string(ap);
 				break;
 			case '%':
 				printed_chars += print_percent(ap);
